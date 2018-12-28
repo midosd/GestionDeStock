@@ -62,6 +62,11 @@
 	<bean id="venteService" class="com.isccb.stock.services.impl.VenteServiceImpl">
 	<property name="dao" ref="venteDao"></property>
 	</bean>
+	
+	<bean id="flickrDao" class="com.isccb.stock.dao.impl.FlickrDaoImpl"/>
+	<bean id="flickrService" class="com.isccb.stock.services.impl.FlickrServiceImpl">
+	<property name="dao" ref="flickrDao"></property>
+	</bean>
 		
 	
 </beans>
